@@ -117,5 +117,19 @@
     <button onclick="generatebill()"> Result</button>
 
     <script src="bill.js"></script>
+
+    <script>
+        // When index.html loads, check if previous values are stored
+        window.onload = function () {
+          let price = localStorage.getItem("price");
+          let quantity = localStorage.getItem("quantity");
+          let gst = localStorage.getItem("gst");
+      
+          if (price) document.getElementById("price").value = price;
+          if (quantity) document.getElementById("quantity").value = quantity;
+          if (gst) document.getElementById("GST").value = gst;
+        };
+      </script>
+      
 </body>
 </html>

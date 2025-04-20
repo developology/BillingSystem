@@ -19,6 +19,8 @@ function generatebill() {
         localStorage.setItem("final_amount", final_amount);
         localStorage.setItem("gst", gst);
     
+        localStorage.setItem("price", price);
+        localStorage.setItem("quantity", quantity);
         // Opening the final bill page
         window.location.href = "finalbill.html";
    

@@ -68,6 +68,23 @@
                 transform: translateY(0);
             }
         }
+        button {
+    padding: 10px 20px;
+    background-color: #e60000; /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
     </style>
 </head>
 <body>
@@ -76,6 +93,8 @@
         <h3 id="gst"></h3>
         <h3 id="gstAmount"></h3>
         <h3 id="finalAmount"></h3>
+        <button onclick="window.location.href='index.html'">Go Back and Edit</button>
+
     </div>
 
     <script>
@@ -90,6 +109,8 @@
         document.getElementById("gst").innerHTML = `GST: ${gst}%`;
         document.getElementById("gstAmount").innerHTML = `GST Amount: ₹${gst_amount}`;
         document.getElementById("finalAmount").innerHTML = `Final Amount: ₹${final_amount}`;
+
+        
     </script>
 </body>
 </html>
